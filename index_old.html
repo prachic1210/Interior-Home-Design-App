@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        body {
+            margin             : 0;
+            font-family        : Arial, Helvetica, sans-serif;
+            background         : url("images/bg1.jpg") no-repeat;
+            background-size    : cover;
+            height             : 1045px;
+        }
+        
+        .H1div {
+            font-size         : 30px;
+            font-weight       : 300!important;
+            font-family       : Surveyor SSm A,Surveyor SSm B,serif;
+            color             : #1c2233;
+            letter-spacing    : -1px;
+            line-height       : 1.32em;
+            margin-left       : 55px;
+            margin-bottom     : 15px;
+            display           : inline-block;
+            padding           : 20px;
+            position          :  absolute;
+            text-align        : center;
+            max-width         : 20%;
+        }
+
+        .btn-primary{
+            font-weight      : 400!important;
+            font-family      : Sailec-Light,sans-serif;
+            background-color : #1c2233;
+            color            : #fff;
+            font-size        : 15px;
+            text-decoration  : none;
+            cursor           : pointer;
+            padding          : 17px 50px;
+            margin-top       : 10px;
+            margin-left      : 120px;
+            text-transform: none;
+        }
+
+        h1 {
+            font-size        : 22px;
+            padding-top      : 100px;
+            padding-left     : 20px;
+            position         : relative;
+            max-width        : inherit;
+            text-align       : center;
+            position         : relative;
+            top              : 10px;
+            max-width        : inherit;
+            font-weight      : 300;
+            font-family      : Sailec-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+
+        h2 {
+            font-size        : 21px;
+            padding-top      : 12px;
+            background-color : #ffffff8a;
+            padding-left     : 78px;
+            letter-spacing   : -1px;
+            color            : #1c2033;
+            position         : relative;
+            max-width        : inherit;
+            font-family      : Sailec-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+
+        h3 {
+            font-size        : 16px;
+            padding-top      : 12px;
+            padding-left     : 20px;
+            position         : relative;
+            max-width        : inherit;
+            font-family      : Sailec-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-style       : italic;
+        }
+
+        select {
+            cursor                   : pointer;
+            display                  : inline-block;
+            margin-left              : 93px;
+            position                 : relative;
+            background-color         : #1c2233;
+            border                   : 1px solid #ccc;
+            width                    : 234px;
+            height                   : 47px;
+            font-family              : Sailec-Light,sans-serif;
+            font-size                : 15px;
+            font-weight              : 400;
+            text-transform           : none;
+            text-decoration          : none;
+            color                    : white;
+            text-transform           : none;
+            text-align-last          :center ;
+        }
+
+        #first_div {
+            background     : #5c6c846b ;
+            border-radius  : 4px ;
+            width          : 450px ;
+            height         : 250px ;
+            height         : 250px ;
+            margin-left    : 50px ;
+            margin-top     : 70px ;
+        }
+
+        #big-pic{
+            border       : 1px solid white;
+            /*h-offset , v- offset blue 1px color */
+            box-shadow   : 2px 2px 5px 1px gray;
+            height       : 450px;
+            width        : 700px;
+            margin       : 20px 20px 3px ; /*Top Right Bottom Left */
+        }
+
+        #strip-div {
+            border        : 1px;
+            box-shadow    : 2px 2px 5px 1px gray;
+            height        : 250px;
+            margin-bottom : 20px;
+            margin-right  : 20px;
+            margin-top    : 40px;
+            padding       : 5px;
+            width         : 1500px;
+            white-space   : nowrap;
+            overflow      : scroll;
+            overflow-y    : hidden;
+
+        }
+
+        .thumb {
+            cursor: pointer;
+        }
+
+        #summary_div {
+            background     : rgb(81, 104, 148);
+            border-radius  : 4px;
+            width          : 400px;
+            height         : 400px;
+            margin-left    : 50px;
+            margin-top     : 70px;
+            position       : absolute;
+            right          : 50px;
+            top            : 0px;
+        }
+
+        #summary_div h2{
+
+        }
+        #formId {
+            background     : rgb(81, 104, 148);
+            border-radius  : 4px;
+            width          : 500px;
+            height         : 453px;
+            margin-left    : 20px;
+            margin-top     : 20px;
+            position       : absolute;
+            right          : 50px;
+            top            : 71px;
+        }
+
+        #finalBtn {
+            margin-left    : 100px;
+        }
+
+        #div1 {
+            background-color     : #5c6c846b ;
+            border-radius        : 4px ;
+            width                : 454px ;
+            height               : 125px ;
+            margin-left          : 51px ;
+            margin-top           : 69px ;
+        }
+
+        #div2 {
+            background-color     : #5c6c846b ;
+            border-radius        : 4px ;
+            width                : 454px ;
+            height               : 125px ;
+            margin-left          : 51px ;
+            margin-top           : 40px ;
+        }
+
+        #div3 {
+            background-color     : #5c6c846b ;
+            border-radius        : 4px ;
+            width                : 454px ;
+            height               : 125px ;
+            margin-left          : 51px ;
+            margin-top           : 35px ;
+        }
+
+        #dreamId {
+            padding-left   : 52px;
+            font-size      : 28px;
+            padding-top    : 0px  !important;
+            text-align     : left;
+        }
+
+        #formInternalDiv div {
+            margin-left    : 20px;
+            padding-top    : 20px;
+            font-size      : 25px;
+            font-family    : Sailec-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        
+        #formId h1 {
+            font-size      : 35px;
+            padding-top    : 0px;
+        }
+
+        #formId h2 {
+            font-size      : 30px;
+        }
+
+        input[type="text" ] {
+            padding        : 1px 0px;
+            margin-left    : 100px;
+        }
+
+        p {
+            color          : red;
+            font-size      : 15px;
+        }
+        
+        #infoSubmitButton {
+            margin-left    : 200px;
+            font-size      : 25px;
+            margin-top     : 20px;
+        }
+
+        #cf7 img {
+            position:absolute;
+            left:0;
+            -webkit-transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+            opacity:0;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            filter: alpha(opacity=0);
+        }
+
+        #cf7 img.opaque {
+        opacity:1;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=1);
+        }
+
+    </style>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="cookies.js"></script>
+    <script>
+        let trackCreated   = [],
+            finalSelected  = [],
+            questionArray  = [],
+            divCreated     = [],
+            countSelectEle =  1;
+
+        function init() {
+            //delete first div
+            let firstDiv = document.getElementById("div1");
+            firstDiv != null && firstDiv != "" ? firstDiv.remove() : "";
+
+            deleteDivs(trackCreated);
+            let summaryEle = document.getElementById("summary_div");
+            summaryEle != null && summaryEle != "" ? summaryEle.remove() : "";
+
+            trackCreated = [];
+            let parentEle = document.getElementById("main-div");
+            let divEle = createNewElement("div", "", parentEle, "div1", true);
+            divCreated[0] = 1;
+            populateDropDown(divEle,'',countSelectEle);
+        }
+
+        function deleteDivs(divDeleteArray){
+            //delete all the previously loaded dropdowns
+            //remove last div
+            if(divDeleteArray.length > 0) {
+                let lastIndex = divDeleteArray.length-1;
+                let lastDD = document.getElementById("div" + divDeleteArray[lastIndex]);
+                if(lastDD != null && lastDD != "" && lastDD.nextElementSibling != null) {
+                    lastDD.nextElementSibling.remove();
+                    divCreated[divDeleteArray[lastIndex]-1] = "";
+                }
+
+                for (let i=0;i<divDeleteArray.length;i++) {
+                    lastDD = document.getElementById("div" + divDeleteArray[i]);
+                    if(lastDD != null && lastDD != "" ) {
+                        lastDD.remove();
+                        divCreated[divDeleteArray[i]-1] = "";
+                    }
+                }
+            }//when nothing is selected
+        }
+
+        function populateDropDown(divEle,interiorKey,countSelectEle)
+        {
+            let  selectEle = document.createElement('select'),
+                 currentObject = getInnerObject(interiorKey, interiorObj);
+
+            selectEle.setAttribute("id",countSelectEle);
+            countSelectEle = countSelectEle+1;
+
+            //setting the default value for drop down
+            if(currentObject != null && currentObject != ""){
+
+                const optEle = document.createElement("option");
+                optEle.value = "Choose any one:";
+                optEle.text =  "Choose any one:";
+                selectEle.appendChild(optEle);
+            }
+
+            //populating the drop down
+            for (let i = 0; i < Object.keys(currentObject).length; i++) {
+                let optionValue = Object.keys(currentObject)[i];
+
+                if(Object.keys(currentObject)[i] == "Question"){
+                    createNewElement("h2", currentObject[optionValue], divEle, "", true);
+                    questionArray[countSelectEle-2] = currentObject[optionValue];
+                    continue;
+                }
+                
+                const optEle = document.createElement("option");
+                optEle.value =  Object.keys(currentObject)[i];
+                optEle.text =  Object.keys(currentObject)[i];
+                selectEle.appendChild(optEle);
+            }
+
+            //no child element should be append
+            if(Object.keys(currentObject).length > 0)
+                divEle.appendChild(selectEle);
+
+            // add event listeners
+            selectEle.addEventListener("change", function () {
+                let id = parseInt(selectEle.id),
+                    nextDivId="";
+
+                finalSelected[id-1]=selectEle.value;
+                console.log("Final Selected :",finalSelected);
+                
+                //not visited drop down 
+                if(!trackCreated.includes(id)){
+                    let parentID = selectEle.parentElement.id;
+                    nextDivId = parseInt(parentID.substring(parentID.length-1, parentID.length))+1;
+                    let parentEle = document.getElementById("main-div");
+                    let divEle = createNewElement("div", "", parentEle, "div" + nextDivId, true);
+                    divCreated[nextDivId-1] = parseInt(nextDivId);
+                    trackCreated.push(id);
+                    populateDropDown(divEle,selectEle.value,countSelectEle);
+                }
+                else{
+                     //create an array for the Id's which we need to delete
+                     let trackCreatedDrop = divCreated.filter(function (x) {
+                        return x > id;
+                    });
+
+                    //retain the tracked Id's
+                    trackCreated = divCreated.filter(function (x) {
+                        return x <= id;
+                    });
+
+                    //remove last div
+                    deleteDivs(trackCreatedDrop);
+
+                    //after dropping the previously loaded dropDown 
+                    //load the new one as per selection
+                    let parentID = selectEle.parentElement.id;
+                    nextDivId = parseInt(parentID.substring(parentID.length-1, parentID.length))+1; 
+                    let parentEle = document.getElementById("main-div");
+                    let divEle = createNewElement("div", "", parentEle, "div" + nextDivId, true);
+                    divCreated[nextDivId-1] = parseInt(nextDivId);
+                    populateDropDown(divEle,selectEle.value,countSelectEle);
+                }
+                
+                if(id===3){
+                    FinalNodes();
+                }
+
+            }, false);
+        }
+
+        function getInnerObject(value, data) {
+
+            //this is the first hierarchy
+            if(value == "") {
+                return data;
+            }
+
+            let dataKey="";
+
+            Object.keys(data).some(key => {
+
+                //this is the last hierarchy
+                if(data[key] == value){
+                    return null;
+                }
+
+                //this is the middle hierarchy
+                if (key == value) {
+                    dataKey = data[key];
+                    // console.log(dataKey);
+                    return dataKey;
+                }
+                //if the data[key] is an object call the find function again
+                if (data[key] && typeof data[key] === 'object' ) {
+                    dataKey = getInnerObject(value, data[key]);
+                    return dataKey;
+                }
+            });
+
+            //we are comparing keys so return dataKey value
+            return dataKey;
+        }
+               
+        function FinalNodes() {
+            let bodyEle = document.getElementById('main-div');
+            let summaryEle = document.getElementById("summary_div");
+            summaryEle != null && summaryEle != "" ? summaryEle.remove() : "";
+
+            let finalDivEle = createNewElement("div", "", bodyEle, "summary_div", true);
+             
+            createNewElement("h2", "Please verify your choices...", finalDivEle, "", true);
+
+            for(let i=0;i<finalSelected.length;i++) {
+                createNewElement("h2", (i+1) + ") " + questionArray[i], finalDivEle, "", true);
+                createNewElement("h3", " - " + finalSelected[i], finalDivEle, "", true);         
+            }
+
+            let finalSubmitButton = createNewElement("BUTTON", "Let's discover your dream home", finalDivEle, "finalBtn", true);
+            finalSubmitButton.addEventListener("click", showFinalHome);
+        }
+
+        function localStorageValues() {
+
+            for(let i =0;i<finalSelected.length;i++){
+                console.log("Inside Local Storage");
+                localStorage.setItem(i.toString(),finalSelected[i])
+            }
+        }
+
+        function showFinalHome() {
+
+            // local storage
+            localStorageValues();
+            document.getElementById("main-div").remove();
+            document.body.style.background      = "none";
+            document.body.style.backgroundColor = "grey";
+
+            let bodyEle = document.getElementById('main-body');
+                h1Ele   = createNewElement("h1","Which rooms can you imagine as your dream home?",bodyEle,"dreamId");
+                h1Ele.style
+            //load big images
+            //load big images
+            loadMainImg(bodyEle);
+
+            //create small div for image
+            let stripDivEle = createNewElement("div","",bodyEle,"strip-div", true);
+
+            //load small images
+            loadSmallImg(stripDivEle);
+
+        }
+
+        function loadMainImg(bodyEle) {
+
+            //find img path
+            let imgPath = findImgPath();
+
+            // big image
+            let bigImg = document.createElement('img');
+            bigImg.setAttribute("src",imgPath +1+".jpeg");
+            bigImg.setAttribute("alt","BigImg");
+            bigImg.setAttribute("id","big-pic");
+            bodyEle.appendChild(bigImg);
+
+            bigImg.addEventListener("click",function (evt) {
+                if(evt.target.nodeName=="IMG"){
+                    formBuilder(bodyEle);
+                }
+            })
+        }
+
+
+        function formBuilder(bodyEle) {
+            let formDivEle = createNewElement("div","",bodyEle,"formId", true);
+            createNewElement("h1","Great Choice",formDivEle,"", true);
+            createNewElement("h2","Getting to know you...",formDivEle,"", false);
+            
+            let formInternalDiv = createNewElement("div", "", formDivEle, "formInternalDiv", true);
+
+            let fNameDiv = createNewElement("div", "", formInternalDiv, "fNameDiv", true);
+            createNewElement("label","First Name",fNameDiv,"fNameLabel", false);
+            fName = document.createElement("input");
+            fName.setAttribute("type", "text");
+            fName.setAttribute("name", "firstName");
+            fName.setAttribute("id", "firstNameId");
+            fNameDiv.append(fName);
+
+            let lNameDiv = createNewElement("div", "", formInternalDiv, "lNameDiv", true);
+            createNewElement("label","Last Name",lNameDiv ,"lNameLabel", false);
+            lName = document.createElement("input");
+            lName.setAttribute("type", "text");
+            lName.setAttribute("name", "lastName");
+            lName.setAttribute("id", "lastNameId");
+            lNameDiv.append(lName);
+
+            let emailDiv = createNewElement("div", "", formInternalDiv, "emailDiv", true);
+            createNewElement("label","E-mail",emailDiv ,"emailLabel", false),
+            email = document.createElement("input");
+            email.setAttribute("type", "text");
+            email.setAttribute("name", "email");
+            email.setAttribute("id", "emailId");
+            emailDiv.append(email);
+
+            let infoSubmitButton = createNewElement("BUTTON", "Submit", formInternalDiv, "infoSubmitButton", true);
+
+
+            infoSubmitButton.addEventListener("click", function(){
+                //delete previous error message
+                let errorDiv = document.getElementById("errorDiv");
+                if(errorDiv != null && errorDiv != "") {
+                    errorDiv.remove();
+                }
+
+                let errorDivEle = createNewElement("div", "", formInternalDiv, "errorDiv", true);
+                //validate the fields
+                let val = document.getElementsByName("firstName")[0].value;
+                if (val == "") {
+                    createNewElement("p", "Please enter First Name", errorDivEle, "", true);
+                }
+                val = document.getElementsByName("lastName")[0].value;
+                if (val == "") {
+                    createNewElement("p", "Please enter Last Name", errorDivEle, "", true);
+                }
+                val = document.getElementsByName("email")[0].value;
+                if (val == "") {
+                    createNewElement("p", "Please enter E-mail", errorDivEle, "", true);
+                }
+
+                //store Cookies
+                console.log("set Cookies :");
+                let valueFname = document.getElementById('firstNameId').value,
+                    valueLname = document.getElementById('lastNameId').value,
+                    valueEmail = document.getElementById('emailId').value;
+                    // document.cookie = "test=valueFname";
+                cookies.setCookie("firstName" ,valueFname);
+                cookies.setCookie("lastName"  ,valueLname);
+                cookies.setCookie("emailId"   ,valueEmail);
+            });
+
+        }
+
+        function loadSmallImg(stripDivEle) {
+
+            //find img path
+            let imgPath     = findImgPath(),
+                totalImg    = 15;
+
+            // big image
+            for(let i=2;i<totalImg;i++){
+                let smallImg = document.createElement('img');
+                smallImg.setAttribute("src",imgPath+i+".jpeg");
+                smallImg.setAttribute("alt","SmallImg"+i);
+                smallImg.setAttribute("id","SmallImg"+i);
+                smallImg.style.height = "200px";
+                stripDivEle.append(smallImg);
+
+                smallImg.addEventListener("click",function (evt) {
+                    if(evt.target.nodeName == "IMG"){
+                        showPic(this.src);
+                    }
+                });
+
+            }// end of for
+        }
+        
+        function findImgPath() {
+            let imgPath = "images/"+finalSelected[0]+"/"+finalSelected[1]+"/"+finalSelected[2]+"/";
+            return imgPath;
+        }
+
+        function showPic(imgSrc){
+            document.getElementById('big-pic').src = imgSrc;
+        }
+
+
+        function createNewElement (elemType, text, appendToElem, id, isAppendChild) {
+            let newEle = document.createElement(elemType);
+            if (text != ""){
+                let newEleText = document.createTextNode(text);
+                newEle.appendChild(newEleText);
+            }
+            if(appendToElem != "" && appendToElem != null){
+                if(isAppendChild)
+                    appendToElem.appendChild(newEle);
+                else
+                    appendToElem.append(newEle);
+            }
+
+            id != "" && id != null ? newEle.setAttribute("id",id) : null;
+            return newEle;
+        }
+    </script>
+</head>
+<body id="main-body">
+<div id="main-div">
+    <div id="first_div">
+        <div class="H1div">The most delightful way to decorate your home.</div>
+        <h1>Partner with an interior designer to create the perfect space, all online.</h1>
+        <button class="btn-primary" type="submit" onclick="init();">Find Your Style</button>
+    </div>
+
+</div>
+</body>
+</html>

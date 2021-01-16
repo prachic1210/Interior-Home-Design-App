@@ -1,0 +1,288 @@
+    body {
+        margin             : 0;
+        font-family        : Arial, Helvetica, sans-serif;
+        background         : url("images/bg1.jpg") no-repeat;
+        background-size    : cover;
+        height             : 1045px;
+    }
+
+    .H1div {
+        font-size         : 30px;
+        font-weight       : 300!important;
+        font-family       : Surveyor SSm A,Surveyor SSm B,serif;
+        color             : #1c2233;
+        letter-spacing    : -1px;
+        line-height       : 1.32em;
+        margin-left       : 55px;
+        margin-bottom     : 15px;
+        display           : inline-block;
+        padding           : 20px;
+        position          :  absolute;
+        text-align        : center;
+        max-width         : 20%;
+    }
+
+    .btn-primary{
+        font-weight      : 400!important;
+        font-family      : Sailec-Light,sans-serif;
+        background-color : #1c2233;
+        color            : #fff;
+        font-size        : 15px;
+        text-decoration  : none;
+        cursor           : pointer;
+        padding          : 17px 50px;
+        margin-top       : 10px;
+        margin-left      : 120px;
+        text-transform: none;
+    }
+
+    h1 {
+        font-size        : 22px;
+        padding-top      : 100px;
+        padding-left     : 20px;
+        position         : relative;
+        max-width        : inherit;
+        text-align       : center;
+        position         : relative;
+        top              : 10px;
+        max-width        : inherit;
+        font-weight      : 300;
+        font-family      : Sailec-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+
+    h2 {
+        font-size        : 21px;
+        padding-top      : 12px;
+        background-color : #ffffff8a;
+        padding-left     : 78px;
+        letter-spacing   : -1px;
+        color            : #1c2033;
+        position         : relative;
+        max-width        : inherit;
+        font-family      : Sailec-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+
+    h3 {
+        font-size        : 16px;
+        padding-top      : 12px;
+        padding-left     : 20px;
+        position         : relative;
+        max-width        : inherit;
+        font-family      : Sailec-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-style       : italic;
+    }
+
+    select {
+        cursor                   : pointer;
+        display                  : inline-block;
+        margin-left              : 93px;
+        position                 : relative;
+        background-color         : #1c2233;
+        border                   : 1px solid #ccc;
+        width                    : 234px;
+        height                   : 47px;
+        font-family              : Sailec-Light,sans-serif;
+        font-size                : 15px;
+        font-weight              : 400;
+        text-transform           : none;
+        text-decoration          : none;
+        color                    : white;
+        text-transform           : none;
+        text-align-last          :center ;
+    }
+
+    #first_div {
+        background     : #5c6c846b ;
+        border-radius  : 4px ;
+        width          : 450px ;
+        height         : 250px ;
+        height         : 250px ;
+        margin-left    : 50px ;
+        margin-top     : 70px ;
+    }
+
+    #big-pic{
+        border       : 1px solid white;
+        /*h-offset , v- offset blue 1px color */
+        box-shadow   : 2px 2px 5px 1px gray;
+        height       : 450px;
+        width        : 700px;
+        margin       : 20px 20px 3px ; /*Top Right Bottom Left */
+    }
+
+    #strip-div {
+        border        : 1px;
+        box-shadow    : 2px 2px 5px 1px gray;
+        height        : 250px;
+        margin-bottom : 20px;
+        margin-right  : 20px;
+        margin-top    : 40px;
+        padding       : 5px;
+        width         : 1500px;
+        white-space   : nowrap;
+        overflow      : scroll;
+        overflow-y    : hidden;
+
+    }
+
+    .thumb {
+        cursor: pointer;
+    }
+
+    #summary_div {
+        background     : #5c6c846b;
+        border-radius  : 4px;
+        width          : 432px;
+        height         : 487px;
+        margin-left    : 50px;
+        margin-top     : 70px;
+        position       : absolute;
+        right          : 50px;
+        top            : 0px;
+    }
+
+    #summary_div h2{
+        font-size        : 21px;
+        padding-top      : 12px;
+        padding-left     : 23px;
+        background       : transparent;
+    }
+
+    div + h2{
+        font-size       : 30px;
+    }
+
+    #summary_div h1{
+        font-size        : 21px;
+        padding-top      : 12px;
+        padding-left     : 23px;
+        font-weight      : 600;
+        background       : transparent;
+        font-family      : Sailec-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+
+    #summary_div h3{
+        font-size        : 20px;
+        text-decoration  : none;
+        color            : #0d0e67;
+        padding-left     : 157px;
+        font-style       : normal;
+        background-color : #faebd7a3;
+    }
+
+    #formId {
+        background     : rgb(81, 104, 148, 0.5);
+        border-radius  : 4px;
+        width          : 500px;
+        height         : 453px;
+        margin-left    : 20px;
+        margin-top     : 20px;
+        position       : absolute;
+        right          : 50px;
+        top            : 71px;
+    }
+
+    #finalBtn {
+        font-weight      : 400!important;
+        font-family      : Sailec-Light,sans-serif;
+        background-color : #1c2233;
+        color            : #fff;
+        font-size        : 15px;
+        text-decoration  : none;
+        cursor           : pointer;
+        padding          : 17px 50px;
+        margin-top       : 2px;
+        margin-left      : 58px;
+        text-transform: none;
+    }
+
+    #div1 {
+        background-color     : #5c6c846b ;
+        border-radius        : 4px ;
+        width                : 454px ;
+        height               : 125px ;
+        margin-left          : 51px ;
+        margin-top           : 69px ;
+    }
+
+    #div2 {
+        background-color     : #5c6c846b ;
+        border-radius        : 4px ;
+        width                : 454px ;
+        height               : 125px ;
+        margin-left          : 51px ;
+        margin-top           : 40px ;
+    }
+
+    #div3 {
+        background-color     : #5c6c846b ;
+        border-radius        : 4px ;
+        width                : 454px ;
+        height               : 125px ;
+        margin-left          : 51px ;
+        margin-top           : 35px ;
+    }
+
+    #dreamId {
+        padding-left   : 52px;
+        font-size      : 28px;
+        padding-top    : 0px  !important;
+        text-align     : left;
+    }
+
+    #formInternalDiv div {
+        margin-left    : 20px;
+        padding-left   : 45px;
+        font-size      : 25px;
+        font-family    : Sailec-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+
+    #formId h1 {
+        font-size      : 35px;
+        padding-top    : 0px;
+    }
+
+    #formId h2 {
+        font-size      : 30px;
+    }
+
+    input[type="text" ] {
+        padding        : 1px 0px;
+        margin-left    : 100px;
+    }
+
+    #errorP {
+        color          : rgba(214, 23, 23, 0.7) ;
+        font-size      : 15px;
+        padding-left   : 30px;
+    }
+
+    #infoSubmitButton {
+        margin-left    : 165px;
+        font-size      : 25px;
+        margin-top     : -30px;
+    }
+
+    #thankYouId {
+        font-family     : 'ff-tisa-sans-web-pro', serif;
+        font-weight     : 400;
+        font-style      : italic;
+        line-height     : 1.4em;
+        font-size       : 75px;
+        margin          : 0 auto 2vh;
+        max-width       : 768px;
+        color           : chocolate;
+        padding-top      : 100px;
+    }
+
+    #main-div {
+        height:900px;   
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;        
+    }
+
+    #emailLabel {
+        padding-right : 46px;
+    }
